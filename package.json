@@ -25,7 +25,7 @@
     "start": "node index.js",
     "dev": "cds watch",
     "bat": "my-script.bat",
-    "build": "npx cds build --clean && npm run bat",
+    "build": "node_modules/.bin/cds build --clean && npm run bat",
     "build-docker": "cds build --clean"
   },
   "cds": {

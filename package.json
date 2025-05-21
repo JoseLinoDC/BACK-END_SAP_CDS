@@ -5,6 +5,9 @@
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node": "22.14.0"
+  },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.40.0",
     "@hapi/boom": "^10.0.1",
@@ -24,9 +27,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "cds watch",
-    "bat": "my-script.bat",
-    "build": "node_modules/.bin/cds build --clean && npm run bat",
-    "build-docker": "cds build --clean"
+    "build": "npx cds build --clean"
   },
   "cds": {
     "folders": {
